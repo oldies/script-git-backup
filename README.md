@@ -60,7 +60,8 @@ backup-git-repo REPO_URL LOCAL_PATH [GIT_MIRROR]
   </tr>
   <tr>
     <td><code>GIT_MIRROR</code></td>
-    <td>(optional) Set false to clone repository in normal way (not useing the --mirror flag) 
+    <td>(optional) Set false to clone repository in normal way (not useing the --mirror flag)</td>
+  </tr>
   </tbody>
 </table>
 
@@ -104,7 +105,7 @@ backup-github GITHUB_USER LOCAL_PATH_PREFIX [EXCLUDE_REPOS]
 Backup all git repositories of a [GitLab](https://gitlab.com) user:
 
 ```sh
-backup-gitlab GITLAB_HOST GITLAB_TOKEN LOCAL_PATH_PREFIX [EXCLUDE_REPOS] [GITLAB_HTTP_PROTO] [FETCH_PROTO] [GITLAB_USER] [CURL_OPTS]
+backup-gitlab GITLAB_HOST GITLAB_TOKEN LOCAL_PATH_PREFIX [EXCLUDE_REPOS] [GITLAB_HTTP_PROTO] [FETCH_PROTO] [GITLAB_USER] [CURL_OPTS] [GIT_MIRROR]
 ```
 
 ##### Options
@@ -148,6 +149,10 @@ backup-gitlab GITLAB_HOST GITLAB_TOKEN LOCAL_PATH_PREFIX [EXCLUDE_REPOS] [GITLAB
   <tr>
     <td><code>CURL_OPTS</code></td>
     <td>(optional) Additional curl command line options. E.g. <code>'-u user:pass'</code> for an additional HTTP BASIC authentication</td>
+  </tr>
+  <tr>
+    <td><code>GIT_MIRROR</code></td>
+    <td>(optional) Set false to clone repository in normal way (not useing the --mirror flag)</td>
   </tr>
   </tbody>
 </table>
