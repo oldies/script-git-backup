@@ -38,7 +38,7 @@ backup-github simonwalz "backup_github_com/"
 Backup a git repository by its repository url:
 
 ```sh
-backup-git-repo REPO_URL LOCAL_PATH
+backup-git-repo REPO_URL LOCAL_PATH [GIT_MIRROR]
 ```
 
 ##### Options
@@ -58,6 +58,9 @@ backup-git-repo REPO_URL LOCAL_PATH
     <td><code>LOCAL_PATH</code></td>
     <td>Local directory to save the git repository in. Can be a bare or a non-bare repository. Creates a bare repository if directory does not exist.</td>
   </tr>
+  <tr>
+    <td><code>GIT_MIRROR</code></td>
+    <td>(optional) Set false to clone repository in normal way (not useing the --mirror flag) 
   </tbody>
 </table>
 
